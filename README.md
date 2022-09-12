@@ -3,4 +3,4 @@ This is a fork of the trinty time website the improves on the styling of the pag
 
  ---
 
-Feel Free to reintgrate this with the main branch if you want.
+Feel Free to reintegrate this with the main branch if you want.
