@@ -2,13 +2,37 @@
     --trinity-blue: #111;
     --trinity-gold: #111;
 		--main-bg-color: #fff;
+			--sec-bg-color: #fff;
+	
 		--textmain: #111;
+	--dark: 3.5vw;
 }
-
+[data-theme="dark"] {
+    --trinity-blue: #fff;
+    --trinity-gold: #fff;
+			--sec-bg-color: #eee;
+	
+		--main-bg-color: #111;
+		--textmain: #fff;
+	--dark: 0vw;
+}
 body {
     justify-content: center;
     align-content: center;
 	font-family: 'Red Hat Text', sans-serif;
+}
+
+#iconpack{
+	width: var(--dark);
+	transition: width 0.5s ease 0.5s;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.theme-switch-wrapper{
+	margin-top: 2.2vh;
 }
 
 #clock {
@@ -25,18 +49,19 @@ body {
 }
 
 #block {
-    background-color: var(--main-bg-color);
+    background-color: var(--sec-bg-color);
 
     border-radius: 25px;
     margin: 0 3vw;
 
     box-shadow: 5px 5px rgb(10, 10, 10, 0.5);
 
-    transition: backgroundColor 2s;
+    transition: color 0.5s, background-color 0.5s ease;
 }
 
 #description {
-    color: black;
+    color: var(--textmain);
+	transition: color 0.5s, background-color 0.5s ease;
     font-weight: 900;
     font-size: 5vw;
 
@@ -51,6 +76,7 @@ body {
     background-color: rgb(10, 25, 70, 0.1);
     padding: 10px 5px 40px;
     border-radius: 25px;
+	transition: color 0.5s, background-color 0.5s ease;
 }
 
 #day-type {
@@ -61,7 +87,8 @@ body {
     font-size: 5vw;
     font-weight: 900;
 
-    color: white;
+    color: var(--main-bg-color);
+	transition: color 0.5s, background-color 0.5s ease;
     font-family: sans-serif;
 
     -webkit-text-stroke: 1px black;
@@ -80,7 +107,7 @@ body {
 }
 
 .current-day{
-	background-color: ;
+	
 }
 
 #verison-num {
@@ -101,6 +128,7 @@ body {
 
 #week-schedule > p {
     color: var(--trinity-blue);
+	transition: color 0.5s, background-color 0.5s ease;
     font-size: 5vw;
     font-weight: 900;
 
@@ -123,6 +151,7 @@ body {
 
     background-color: var(--trinity-blue);
     color: var(--trinity-gold);
+	transition: color 0.5s, background-color 0.5s ease;
 }
 
 #footer {
@@ -139,4 +168,7 @@ body {
 
 body{
 	font-family: 'Red Hat Text', sans-serif;
+	transition: color 0.5s ease;
+	background: var(--main-bg-color);
+	color: var(--textmain);
 }
