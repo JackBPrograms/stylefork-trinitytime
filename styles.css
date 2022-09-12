@@ -5,7 +5,7 @@
 			--sec-bg-color: #fff;
 	
 		--textmain: #111;
-	--dark: 3.5vw;
+	--dark: 2.5vw;
 }
 [data-theme="dark"] {
     --trinity-blue: #fff;
@@ -32,7 +32,7 @@ body {
 }
 
 .theme-switch-wrapper{
-	margin-top: 2.2vh;
+	margin-top: 2.2%;
 }
 
 #clock {
