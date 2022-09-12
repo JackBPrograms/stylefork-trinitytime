@@ -49,7 +49,7 @@ function get_time_left(schedule_obj, clock_id, color_change_id, description_id) 
 					const color = get_rgb(diff / class_length);
 
 					//console.log(get_rgb(diff/class_length));
-					document.getElementById("clock").style.color = color;
+					document.getElementById("clock").style.color = get_rgb((diff / class_length), 0.6);
 					//document.getElementById("day-type").style.color = color;
 
 
