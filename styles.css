@@ -168,7 +168,8 @@ body {
 
 body{
 	font-family: 'Red Hat Text', sans-serif;
-	transition: color 0.5s ease;
+	transition: color 0.5s, background-color 0.5s ease;
 	background: var(--main-bg-color);
 	color: var(--textmain);
+	text-align: center;
 }
