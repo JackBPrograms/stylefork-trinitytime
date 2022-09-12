@@ -38,7 +38,7 @@ body {
 #clock {
     color: grey;
     font-weight: 900;
-    font-size: 16vw;
+    font-size: 14vw;
     margin: 0;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
@@ -63,7 +63,7 @@ body {
     color: var(--textmain);
 	transition: color 0.5s, background-color 0.5s ease;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 3.5vw;
 
     text-align: center;
 
@@ -84,7 +84,7 @@ body {
     margin-left: 2vw;
     margin-top: 1vw;
 
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 900;
 
     color: var(--main-bg-color);
@@ -129,7 +129,7 @@ body {
 #week-schedule > p {
     color: var(--trinity-blue);
 	transition: color 0.5s, background-color 0.5s ease;
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 900;
 
     margin-top: 10px;
